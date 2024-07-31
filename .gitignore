@@ -1,0 +1,11 @@
+/wandb
+.ipynb_checkpoints/
+contrastive/.ipynb_checkpoints/
+__pycache__/
+contrastive/__pycache__/
+*.pyc
+*.out
+tensorboard/
+joblog/
+archived/
+
