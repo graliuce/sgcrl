@@ -4,7 +4,7 @@ In this paper, we present empirical evidence of skills and directed exploration 
 <p align="center"><a href="https://github.com/graliuce/sgcrl/tree/main">Code</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/graliuce/sgcrl/tree/main">Paper</a>
 </p>
 <p align="center"><a>
-<img src="bin_image.png" class="center" width="400" height="270">
+<img src="bin_image.png" class="center" width="800" height="300">
 </a></p>
 
 <p align="center"><a>Watch the intro video</a>
