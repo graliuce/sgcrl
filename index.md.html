@@ -1,0 +1,108 @@
+<meta charset="utf-8" emacsmode="-*- markdown -*-">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+<style>
+
+body#md {
+    position: absolute;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: 'Lato';
+    text-align: left;
+    left: 200px;
+    right: 0px;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    color: #555;
+    font-size: 15px;
+    padding-right: 20px;
+    overflow-x: hidden;
+    text-overflow: ellipses;
+}
+
+/* no numbering of headings */
+.md h1:before, .md h2:before, .md h3:before, .md h4:before, .md h5:before, .md h6:before { content: none; }
+
+.md .longTOC a {
+    color: #000;
+}
+
+.md .tocHeader, .md .tocNumber {
+    display: none;
+}
+
+.md a,
+.md div.title, contents, .md .tocHeader,
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6,
+.md .nonumberh1, .md .nonumberh2, .md .nonumberh3, .md .nonumberh4, .md .nonumberh5, .md .nonumberh6,
+.md .shortTOC, .md .mediumTOC, .md .longTOC {
+    font-family: inherit;
+}
+
+
+.md div.title, .md h1, .md h2, .md h3, .md h4 {
+    font-family: 'Lato';
+    font-weight: 800;
+}
+
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+    color: #555;
+    border-color: inherit;
+}
+
+.md h2, .md h3, .md h4 {
+    border: none;
+}
+
+.md .tocTop {
+    display: inline;
+}
+
+.md div.title, .md div.subtitle {
+    text-align: left;
+}
+
+.md div.title {
+    position: absolute;
+    top: -14px;
+    left:-200px;
+    right: 0px;
+    font-weight: 900;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 0px 0px 3px #00c8c8;
+    background-color: #00c8c8;
+    background-image: url('https://casual-effects.com/markdeep/website-banner.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    color: #fff;
+    font-size: 45px;
+    z-index: 10;
+}
+
+.md div.afterTitles {
+    height: 90px;
+}
+
+a:link {
+  color: orange;
+}
+</style>
+
+
+<p align="center" style="font-size:24px; color: #333; padding-top: 20px">
+A Single Goal is All You Need: <br><br>Skills and Exploration Emerge from Contrastive RL without Rewards, Demonstrations, or Subgoals
+</p>
+
+<p align="center" style="font-size: 20px"><a href="https://github.com/graliuce/sgcrl/tree/main">Code</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://arxiv.org/abs/2408.05804">Paper</a>
+</p>
+
+![Watch the intro video!](https://www.youtube.com/watch?v=woUgWmXsbxE)
+
+
+
+**Abstract**: In this paper, we present empirical evidence of skills and directed exploration emerging from a simple RL algorithm long before any successful trials are observed. For example, in a manipulation task, the agent is given a single observation of the goal state and learns skills, first for moving its end-effector, then for pushing the block, and finally for picking up and placing the block. These skills emerge before the agent has ever successfully placed the block at the goal location and without the aid of any reward functions, demonstrations, or manually-specified distance metrics. Once the agent has learned to reach the goal state reliably, exploration is reduced. Implementing our method involves a simple modification of prior work and does not require density estimates, ensembles, or any additional hyperparameters. Intuitively, the proposed method seems like it should be terrible at exploration, and we lack a clear theoretical understanding of why it works so effectively, though our experiments provide some hints.
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
+
