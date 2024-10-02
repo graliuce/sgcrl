@@ -1,9 +1,6 @@
 # Single-goal Contrastive RL (SGCRL)
 [Website](https://graliuce.github.io/sgcrl/) &nbsp;&nbsp;&nbsp;  [Paper](https://arxiv.org/pdf/2408.05804) 
 
-[Watch the intro video!](https://github.com/graliuce/sgcrl/blob/main/intro_video.mp4
-)
-
 To set up the environment, follow [instructions linked here](https://docs.google.com/document/d/1Oj9s8-1t7tq_EK5h1iFsCiNFtck_rRVtbXvgMxIsXtQ/edit?usp=sharing).
 
 To run code, use
