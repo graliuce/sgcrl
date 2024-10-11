@@ -1,6 +1,57 @@
 # Single-goal Contrastive RL (SGCRL)
 
-To set up the environment, follow [instructions linked here](https://docs.google.com/document/d/1Oj9s8-1t7tq_EK5h1iFsCiNFtck_rRVtbXvgMxIsXtQ/edit?usp=sharing).
+## Set up conda environment
+**Set up conda:**
+1. Load up anaconda: `module load anaconda3`
+2. Clone the repository
+3. Create an Anaconda environment: `conda create -n contrastive_rl python=3.9 -y`
+4. Activate the environment: `conda activate contrastive_rl`
+
+**Install package dependencies:**
+
+1. Change library path: `export LD_LIBRARY_PATH={path to conda}/.conda/envs/contrastive_rl/lib/`
+2. Install the requirements: `pip install -r requirements.txt --no-deps`
+3. Download the mujoco binaries and place them in ~/.mujoco/ according to instructions in https://github.com/openai/mujoco-py. Run `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:{path to mujoco}/.mujoco/mujoco210/bin`
+4. Reinstall strict versions for the following packages:
+```
+pip install dm-acme[jax,tf] 
+pip install jax==0.4.10 jaxlib==0.4.10
+pip install ml_dtypes==0.2.0
+pip install dm-haiku==0.0.9
+pip install gymnasium-robotics 
+pip uninstall scipy; pip install scipy==1.12
+scikit-learn pandas
+```
+
+**Potential errors and fixes:**
+Cythonizing Error:
+
+`fatal error: GL/glew.h: No such file or directory 4 | #include <GL/glew.h>`
+
+Fix:
+```
+conda install -c conda-forge glew
+conda install -c conda-forge mesalib
+conda install -c menpo glfw3
+pip install patchelf
+```
+
+Cythinizing Error:
+
+`Cannot assign type 'void (const char *) except * nogil' to 'void (*)(const char *) noexcept nogil'`
+
+Fix: `pip install "cython<3"`
+
+**Running with GPU:**
+
+To enable GPU running, run these three commands in a shell with gpu access. This essentially picks out a set of gpu backend infrastructures that is simultaneously supported by jax and the repository code. Note that this step may vary depending on the specifics of the computing environment.
+
+```
+module load cudatoolkit/11.3 cudnn/cuda-11.x/8.2.0
+pip install optax==0.1.7
+pip install --upgrade jax==0.4.7 jaxlib==0.4.7+cuda11.cudnn82 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+export LD_LIBRARY_PATH=/usr/local/cudnn/cuda-11.3/8.2.0/lib64:/{path to conda}/.conda/envs/contrastive_rl/lib
+```
 
 To run code, use
 ```
