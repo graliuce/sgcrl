@@ -20,7 +20,7 @@ pip install ml_dtypes==0.2.0
 pip install dm-haiku==0.0.9
 pip install gymnasium-robotics 
 pip uninstall scipy; pip install scipy==1.12
-scikit-learn pandas
+pip install torch==2.1.2 scikit-learn pandas
 ```
 
 **Potential errors and fixes:**
@@ -51,6 +51,7 @@ module load cudatoolkit/11.3 cudnn/cuda-11.x/8.2.0
 pip install optax==0.1.7
 pip install --upgrade jax==0.4.7 jaxlib==0.4.7+cuda11.cudnn82 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 export LD_LIBRARY_PATH=/usr/local/cudnn/cuda-11.3/8.2.0/lib64:/{path to conda}/.conda/envs/contrastive_rl/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
 ```
 
 To run code, use
