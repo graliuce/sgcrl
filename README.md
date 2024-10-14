@@ -49,7 +49,7 @@ To enable GPU running, run these three commands in a shell with gpu access. This
 ```
 module load cudatoolkit/11.3 cudnn/cuda-11.x/8.2.0
 pip install optax==0.1.7
-pip install --upgrade jax==0.4.10 jaxlib==0.4.10+cuda12.cudnn88 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+pip install --upgrade jax==0.4.7 jaxlib==0.4.7+cuda11.cudnn82 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/{path to cuda}/lib64
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
 ```
