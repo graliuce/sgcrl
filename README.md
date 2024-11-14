@@ -1,5 +1,5 @@
 # Single-goal Contrastive RL (SGCRL)
-<video src='https://github.com/graliuce/sgcrl/blob/main/sawyer_bin.mp4' width=180/>
+[![sawyer bin](https://github.com/graliuce/sgcrl/blob/main/sawyer_bin.mp4)]
   
 ## Set up conda environment
 **Set up conda:**
