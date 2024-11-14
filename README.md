@@ -1,5 +1,5 @@
 # Single-goal Contrastive RL (SGCRL)
-https://github.com/graliuce/sgcrl/blob/main/sawyer_bin.mp4
+<video src='https://github.com/graliuce/sgcrl/blob/main/sawyer_bin.mp4' width=180/>
 ## Set up conda environment
 **Set up conda:**
 1. Load up anaconda: `module load anaconda3`
