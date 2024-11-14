@@ -1,5 +1,7 @@
 # Single-goal Contrastive RL (SGCRL)
-[![sawyer bin](sawyer_bin.mp4)]
+<video controls src="https://github.com/graliuce/sgcrl/blob/main/sawyer_bin.mp4" width="600">
+  Your browser does not support the video tag.
+</video>
   
 ## Set up conda environment
 **Set up conda:**
