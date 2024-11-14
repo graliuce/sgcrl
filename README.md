@@ -1,7 +1,5 @@
 # Single-goal Contrastive RL (SGCRL)
 
-![Watch the training video!](sawyer_bin.mp4)
-  
 ## Set up conda environment
 **Set up conda:**
 1. Load up anaconda: `module load anaconda3`
