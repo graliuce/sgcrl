@@ -112,7 +112,7 @@ def make_networks(
       sa_repr2, g_repr2, _ = _repr_fn(obs, action, hidden=hidden)
       product2 = _combine_repr(sa_repr2, g_repr2)
       # outer.shape = [batch_size, batch_size, 2]
-      critic_val = jnp.stack([product, product2], axis=-1)
+      critic_val = jnp.stack([critic_val, product2], axis=-1)
       sa_repr = sa_repr2
       g_repr = g_repr2
     return critic_val, sa_repr, g_repr
